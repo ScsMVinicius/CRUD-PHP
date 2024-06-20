@@ -30,7 +30,8 @@
     <div class="container">
       <div class="row"></div>
         <div class="col mt-5">
-                <?php
+           <?php
+          include("config.php");
           switch(@$_REQUEST["page"]){
             case"novo":
               include("novoVeiculo.php");
