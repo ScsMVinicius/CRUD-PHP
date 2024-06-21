@@ -1,5 +1,6 @@
 <h1>Novo Veículo</h1>
-<form>
+<form action="=?pageSalvar" method="POST">
+	<input type="hidden" name="acao" value="cadastrar">
 	<div class="mb-3">
 		<label>Marca</label>
 		<input type="text" name="marca" class="form-control">
