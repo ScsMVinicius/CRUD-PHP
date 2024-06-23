@@ -48,7 +48,17 @@
 			break;
 			
 		case 'excluir':
-			// code...
+			$sql = "DELETE FROM veiculos WHERE id=".$_REQUEST["id"];
+
+			$res = $conn->query($sql);
+
+			if($res==true){
+				print "<script>alert('Veiculo Excluido com Sucesso');</script>";
+				print "<script>location.href='?page=listar';</script>";
+			}else{
+				print "<script>alert('Não foi possivel Excluir');</script>";
+				print "<script>location.href='?page=listar';</script>";
+}
 			break;
 			
 	}
