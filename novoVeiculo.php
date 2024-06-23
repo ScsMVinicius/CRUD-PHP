@@ -1,5 +1,5 @@
 <h1>Novo Veículo</h1>
-<form action="=?pageSalvar" method="POST">
+<form action="?page=salvar" method="POST">
 	<input type="hidden" name="acao" value="cadastrar">
 	<div class="mb-3">
 		<label>Marca</label>
@@ -15,7 +15,7 @@
 	</div>
 	<div class="mb-3">
 		<label>Cor</label>
-		<input type="text" name="Cor" class="form-control">
+		<input type="text" name="cor" class="form-control">
 	</div>
 	<div class="mb-3">
 		<label>Placa</label>
