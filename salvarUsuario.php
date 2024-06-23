@@ -11,6 +11,14 @@
 			$sql = "INSERT INTO veiculos (marca, modelo, versao, cor, placa, chassi) VALUES ('{$marca}','{$modelo}','{$versao}', '{$cor}', '{$placa}', '{$chassi}' )";
 
 			$res = $conn->query($sql);
+
+			if($res==true){
+				print "<script>alert('Veiculo Cadastrado com Sucesso');</script>";
+				print "<script>location.href='?page=listar';</script>";
+			}else{
+				print "<script>alert('Não foi possivel cadastrar');</script>";
+				print "<script>location.href='?page=listar';</script>";
+			}
 			break;
 		
 		case 'editar':
