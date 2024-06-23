@@ -16,6 +16,7 @@
 			print "<th>Cor</th>";
 			print "<th>Placa</th>";
 			print "<th>Chassi</th>";
+			print "<th>Ações</th>";
 			print "</tr>";
 		while($row  = $res-> fetch_object()){
 			print "<tr>";
@@ -26,6 +27,11 @@
 			print "<td>".$row->cor."</td>";
 			print "<td>".$row->placa."</td>";
 			print "<td>".$row->chassi."</td>";
+			print "<td>
+					<button onclick=\"location.href='?page=editar&id=".$row->id."';\"class='btn btn-success'>Editar</button>
+
+					<button class='btn btn-danger'>Excluir</button>
+				  </td>";
 			print "</tr>";
 		}
 		print "</table>";

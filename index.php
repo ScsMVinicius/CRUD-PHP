@@ -39,9 +39,11 @@
             case"listar":
               include("listaDeVeiculos.php");
             break;
-            case "salvar";
-              include("salvarUsuario.php");
+            case "salvar":
+              include("salvarVeiculo.php");
               break;
+            case"editar":
+              include("editarVeiculo.php");
             default:
               print"<h1>Gerêncie Seus Veículos</h1>";
           }
